@@ -1,0 +1,14 @@
+\set QUIET 1
+
+\set PROMPT1 '\npsql %[%033[0;33;32m%]%/%[%033[0m%] on %[%033[0;33;33m%]%M%[%033[0m%] as %[%033[0;33;35m%]%n%[%033[0m%] %[%033[0;33;36m%]%x%[%033[0m%]\n%R> '
+\set PROMPT2 '%R> '
+\pset null '[NULL]'
+\pset pager
+\x auto
+\set COMP_KEYWORD_CASE upper
+\timing
+\set VERBOSITY verbose
+\set HISTFILE ~/.psql_history- :DBNAME
+\set HISTCONTROL ignoredups
+
+\unset QUIET
