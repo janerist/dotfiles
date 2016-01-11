@@ -28,6 +28,8 @@ values."
      ;; better-defaults
      emacs-lisp
      git
+     (osx :variables
+          osx-use-option-as-meta nil)
      ;; markdown
      ;; org
      ;; (shell :variables
