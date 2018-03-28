@@ -1,24 +1,25 @@
 [user]
-	name = janerist
-	email = jan.erik.strom@gmail.com
-[color]
-        diff = auto
-        status = auto
-        branch = auto
-        ui = true
+        name = janerist
+        email = jan.erik.strom@gmail.com
+[merge]
+        tool = DiffMerge
+[diff]
+        guitool = diffmerge
 [core]
-        editor = vim
-[apply]
-        whitespace = nowarn
-[mergetool]
-        keepBackup = false
-[difftool]
-        prompt = false
-[help]
-        autocorrect = 1
-[push]
-        # See `git help config` (search for push.default)
-        # for more information on different options of the below setting.
-        #
-        # Setting to git 2.0 default to suppress warning message
-        default = simple
+        editor = notepad++
+[difftool "diffmerge"]
+        path = C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe
+        cmd = \"C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe\" \"$LOCAL\" \"$REMOTE\"
+[mergetool "DiffMerge"]
+        path = C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe
+        cmd = \"C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe\" -merge -result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+[alias]
+        l = log
+        s = status
+        b = branch
+        ec = config --global -e
+        co = checkout
+        cob = checkout -b
+        up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+        save = !git add -A && git commit -m 'SAVEPOINT'
+        undo = reset HEAD~1 --mixed
