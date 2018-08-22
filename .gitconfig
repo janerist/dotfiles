@@ -6,7 +6,7 @@
 [diff]
         guitool = diffmerge
 [core]
-        editor = notepad++
+        editor = code --wait
 [difftool "diffmerge"]
         path = C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe
         cmd = \"C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe\" \"$LOCAL\" \"$REMOTE\"
