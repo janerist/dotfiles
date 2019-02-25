@@ -1,12 +1,13 @@
 [user]
         name = janerist
-        email = janerik@janerist.com
+        email = janerik@janerist.net
 [merge]
         tool = DiffMerge
 [diff]
         guitool = diffmerge
 [core]
         editor = code --wait
+        sshCommand = 'C:\\Windows\\System32\\OpenSSH\\ssh.exe'
 [difftool "diffmerge"]
         path = C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe
         cmd = \"C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe\" \"$LOCAL\" \"$REMOTE\"
