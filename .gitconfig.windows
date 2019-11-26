@@ -6,7 +6,7 @@
 [diff]
         guitool = diffmerge
 [core]
-        editor = code --wait
+        editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
         sshCommand = 'C:\\Windows\\System32\\OpenSSH\\ssh.exe'
 [difftool "diffmerge"]
         path = C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe
@@ -24,3 +24,4 @@
         up = !git pull --rebase --prune $@ && git submodule update --init --recursive
         save = !git add -A && git commit -m 'SAVEPOINT'
         undo = reset HEAD~1 --mixed
+        cp = cherry-pick
