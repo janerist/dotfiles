@@ -4,3 +4,5 @@ New-Alias gx gitextensions -Force
 
 # Modules
 Import-Module posh-git
+
+function GoAdmin { start-process pwsh –verb runAs }
