@@ -1,6 +1,6 @@
 [user]
         name = janerist
-        email = janerik@janerist.net
+        email = janerist@fastmail.com
 [core]
         editor = vim
 [alias]
@@ -13,17 +13,3 @@
         up = !git pull --rebase --prune $@ && git submodule update --init --recursive
         save = !git add -A && git commit -m 'SAVEPOINT'
         undo = reset HEAD~1 --mixed
-[diff]
-        tool = meld
-[difftool]
-        prompt = false
-[difftool "meld"]        
-        cmd = meld "$LOCAL" "$REMOTE"
-[merge]
-        tool = meld
-[mergetool]
-        prompt = false
-        keepBackup = false
-[mergetool "meld"]
-        # cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
-        cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
