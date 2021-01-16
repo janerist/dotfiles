@@ -1,0 +1,91 @@
+{
+    "final_space": true,
+    "console_title": false,
+    "console_title_style": "",
+    "console_title_template": "",
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "horizontal_offset": 0,
+            "vertical_offset": 0,
+            "segments": [
+                {
+                    "type": "path",
+                    "style": "plain",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#ffffff",
+                    "background": "",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": {
+                        "prefix": "",
+                        "style": "full"
+                    }
+                },
+                {
+                    "type": "git",
+                    "style": "plain",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#C2C206",
+                    "background": "",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": null
+                },
+                {
+                    "type": "root",
+                    "style": "plain",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#B5B50D",
+                    "background": "",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": null
+                },
+                {
+                    "type": "dotnet",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "foreground": "#000000",
+                    "background": "#00ffff",
+                    "properties": {
+                      "prefix": " \uE77F "
+                    }
+                  }
+            ]
+        },
+        {
+            "type": "newline",
+            "alignment": "",
+            "horizontal_offset": 0,
+            "vertical_offset": 0,
+            "segments": null
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "horizontal_offset": 0,
+            "vertical_offset": 0,
+            "segments": [
+                {
+                    "type": "text",
+                    "style": "plain",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#007ACC",
+                    "background": "",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": {
+                        "prefix": "",
+                        "text": ""
+                    }
+                }
+            ]
+        }
+    ]
+}

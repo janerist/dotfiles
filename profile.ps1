@@ -2,7 +2,6 @@
 New-Alias np notepad++ -Force
 New-Alias gx gitextensions -Force
 
-# Modules
-Import-Module posh-git
+Set-PoshPrompt -Theme ~/.mytheme.omp.json
 
-function GoAdmin { start-process pwsh –verb runAs }
+function Adm { start-process wt –verb runAs }
