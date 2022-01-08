@@ -2,6 +2,6 @@
 New-Alias np notepad++ -Force
 New-Alias gx gitextensions -Force
 
-Set-PoshPrompt -Theme ~/.mytheme.omp.json
+oh-my-posh --init --shell pwsh --config ~\.mytheme.omp.json | Invoke-Expression
 
 function Adm { start-process wt –verb runAs }
